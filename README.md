@@ -1,26 +1,41 @@
-# This Rock-Paper-Scissors game is a lightweight, command-line interface (CLI) application developed in Python. It provides a digital version of the classic hand game, allowing a user to compete against a computer opponent.The program is built using foundational Python concepts, including conditional logic, infinite loops, and input handling. It leverages the Python random library to ensure that the computer's choices are unpredictable and unbiased for every round.
+**Rock Paper Scissor Game**
 
-# Key Features
-# Randomized Opponent: Uses the random.choice() method to select between Rock, Paper, and Scissors for the computer.
+A professional command-line interface application developed in Python that brings the classic hand game to your terminal. This script allows a user to compete against a computer opponent with randomized decision-making and instant result processing.
 
-# Case-Insensitive Input: The script uses the .capitalize() method, allowing users to enter "rock," "ROCK," or "Rock" without causing errors.
+**Core Features**
 
-# Input Validation: Checks user input against the valid list of choices and prompts for a correct entry if the input is invalid.
+**Randomized Opponent**: Utilizes the Python random library to ensure the computer makes unpredictable and fair moves every round.
 
-# Continuous Gameplay: Wrapped in a while True loop, the game allows for multiple rounds of play without needing to restart the script.
+**Case-Insensitive Input**: Handles user input flexibly by allowing various capitalizations of the choices Rock, Paper, or Scissor.
 
-# Exit Functionality: Includes a dedicated "Exit" command to gracefully terminate the program.
+**Infinite Gameplay Loop**: Allows users to play multiple rounds continuously without needing to restart the application.
 
-# Game Logic and Rules
-# The winner is determined by comparing the user's input against the computer's choice based on the following standard rules:
+**Graceful Exit**: Includes a dedicated exit command to terminate the game session smoothly at any time.
 
-# User Choice	Computer Choice	Result
-# Rock	Rock	Match Tie
-# Rock	Paper	Computer Win
-# Rock	Scissor	User Win
-# Paper	Paper	Match Tie
-# Paper	Rock	User Win
-# Paper	Scissor	Computer Win
-# Scissor	Scissor	Match Tie
-# Scissor	Paper	User Win
-# Scissor	Rock	Computer Win
+**Game Logic**
+
+The application determines the winner based on these standard competitive rules:
+
+**Rock Scenarios**: Rock vs Rock results in a Tie; Rock vs Paper results in a Computer Win; Rock vs Scissor results in a User Win.
+
+**Paper Scenarios**: Paper vs Paper results in a Tie; Paper vs Rock results in a User Win; Paper vs Scissor results in a Computer Win.
+
+**Scissor Scenarios**: Scissor vs Scissor results in a Tie; Scissor vs Paper results in a User Win; Scissor vs Rock results in a Computer Win.
+
+**Installation and Usage**
+
+**Prerequisites**: Ensure Python 3.x is installed on your local machine.
+
+**Deployment**: Clone or download the game script file to your directory.
+
+**Execution**: Run the script via the terminal using the command: python game.py
+
+**Operation**: Enter Rock, Paper, or Scissor when prompted, or type Exit to close the game.
+
+**Technical Details**
+
+**Language**: Python
+
+**Input Handling**: Standard CLI input with string capitalization and validation.
+
+**Dependencies**: None (Uses Python Standard Library random module).
